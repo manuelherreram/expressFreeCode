@@ -1,0 +1,35 @@
+POST http://localhost:3000/api/cursos/programacion HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 4,
+    "titulo": "Aprende Next.js",
+    "lenguaje": "javascript",
+    "vistas": 12789999,
+    "nivel": "avanzado"
+}
+
+###
+
+PUT http://localhost:3000/api/cursos/programacion/2 HTTP/1.1
+Content-Type: application/json
+
+{
+   "id": 2,
+   "titulo": "Aprende Next.js con proyectos",
+   "lenguaje": "python",
+   "vistas": 14559999,
+   "nivel": "avanzado"
+}
+
+### 
+PATCH http://localhost:3000/api/cursos/programacion/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Aprende React.js con proyectos",
+    "vistas": 344545
+}
+
+### 
+DELETE  http://localhost:3000/api/cursos/programacion/1 HTTP/1.1
